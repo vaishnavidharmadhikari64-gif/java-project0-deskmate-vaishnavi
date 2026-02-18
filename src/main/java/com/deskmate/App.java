@@ -37,13 +37,13 @@ public class App {
                         if (role != Role.ADMIN) System.out.println("Access denied.");
                         else cfg.deskController().menu();
                     }
-//                    case 2 -> cfg.bookingController().menu();
+                    case 2 : cfg.bookingController().menu();
 //                    case 3 -> cfg.reportController().menu();
-//                    case 0 -> {
-//                        log.info("DeskMate stopped by user={}", user);
-//                        System.out.println("Bye!");
-//                        return;
-//                    }
+                    case 0 : {
+                        log.info("DeskMate stopped by user={}", user);
+                        System.out.println("Bye!");
+                        return;
+                    }
                     default : System.out.println("Invalid option.");
                 }
             } catch (ValidationException | EntityNotFoundException | DoubleBookingException e) {

@@ -1,5 +1,6 @@
 package com.deskmate.exception;
 
-public class DoubleBookingException {
-
+public class DoubleBookingException extends RuntimeException {
+    public DoubleBookingException(String message) { super(message); }
 }
+

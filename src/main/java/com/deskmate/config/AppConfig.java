@@ -18,7 +18,6 @@ public class AppConfig {
 	        DeskService deskService = new DeskService(deskDao);
 	        return new DeskController(deskService);
 	    }
-
 	    public BookingController bookingController() {
 	        DeskDao deskDao = new JdbcDeskDao();
 	        BookingDao bookingDao = new JdbcBookingDao();

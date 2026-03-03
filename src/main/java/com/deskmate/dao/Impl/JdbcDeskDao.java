@@ -1,4 +1,4 @@
-package com.deskmate.dao;
+package com.deskmate.dao.Impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import com.deskmate.dao.DeskDao;
 import com.deskmate.exception.DatabaseOperationException;
 import com.deskmate.model.Desk;
 import com.deskmate.utils.DbConnectionFactory;

@@ -1,4 +1,4 @@
-package com.deskmate.dao;
+package com.deskmate.dao.Impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,6 +9,7 @@ import java.sql.Timestamp;
 import java.sql.Types;
 import java.util.Optional;
 
+import com.deskmate.dao.PaymentDao;
 import com.deskmate.exception.DatabaseOperationException;
 import com.deskmate.model.Payment;
 import com.deskmate.utils.DbConnectionFactory;

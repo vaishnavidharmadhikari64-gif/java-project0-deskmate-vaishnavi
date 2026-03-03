@@ -1,4 +1,4 @@
-package com.deskmate.dao;
+package com.deskmate.dao.Impl;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 import com.deskmate.constants.BookingStatus;
+import com.deskmate.dao.BookingDao;
 import com.deskmate.exception.DatabaseOperationException;
 import com.deskmate.model.Booking;
 import com.deskmate.utils.DbConnectionFactory;
